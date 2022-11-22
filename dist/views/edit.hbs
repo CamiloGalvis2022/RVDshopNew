@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+                <div class="card card-body p-4 rounded-0 bg-dark text-white">
+                    <h3 class="text-center">Editar un Producto</h3>
+                    <form action="/edit/{{task._id}}" method="POST">
+                        <div>
+                            <label for="id">Escribe el ID</label>
+                            <input type="text" name="id" placeholder="id" value="{{task.id}}" class="form-control rounded-0 bg-dark text-white"/>
+                        </div>
+                        <div>   
+                            <label for="precio">Escribe el PRECIO</label>
+                            <input type="text" name="precio" placeholder="precio" value="{{task.precio}}" class="form-control rounded-0 bg-dark text-white"/>
+                        </div>
+                        <div>
+                            <label for="descripcion">Escribe la descripcion del producto</label>    
+                            <textarea  name="descripcion" row="3" placeholder="descripcion" class="form-control rounded-0 bg-dark text-white">{{task.descripcion}} </textarea>
+                    </div>
+                            <label for="url">Escribe la URL</label>
+                            <input type="text" name="url" placeholder="url" value="{{task.url}}" class="form-control rounded-0 bg-dark text-white"/>
+                        <div>
+                            <label for="stock">Escribe Stock</label>
+                            <input type="text" name="stock" placeholder="stock"  value="{{task.stock}}" class="form-control rounded-0 bg-dark text-white"/>
+                        </div>
+                        <button class="btn btn-primary mt-2">Actualizar</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
