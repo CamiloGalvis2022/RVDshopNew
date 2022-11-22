@@ -14,7 +14,7 @@ console.log(_config.MONGODB_URI);
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return _mongoose["default"].connect('mongodb://127.0.0.1:27017/crud-rvdshop');
+          return _mongoose["default"].connect('mongodb+srv://RVDshop:emtZiSg5ti4783AU@cluster0.bkqvd8j.mongodb.net/?retryWrites=true&w=majority');
         case 3:
           db = _context.sent;
           console.log('DB conectado con', db.connection.name);
