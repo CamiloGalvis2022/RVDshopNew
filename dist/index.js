@@ -4,5 +4,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 require("./config");
 var _app = _interopRequireDefault(require("./app"));
 require("./database");
-_app["default"].listen(3000);
-console.log('servidor ARRIBA', 3000);
+var PORT = process.env.PORT || 3000;
+_app["default"].listen(PORT, function () {
+  console.log('servidor ARRIBA', PORT);
+});
