@@ -1,0 +1,33 @@
+{
+  "name": "nodeymongodb",
+  "version": "0.0.1",
+  "description": "Base de Datos de Mongo con NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "cam": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Camilo Galvis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.7.2",
+    "morgan": "^1.10.0",
+    "node": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/plugin-transform-regenerator": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/runtime": "^7.20.1",
+    "dotenv": "^16.0.3",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
