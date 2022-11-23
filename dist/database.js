@@ -4,8 +4,9 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 var _mongoose = _interopRequireDefault(require("mongoose"));
-var _config = require("./config");
-console.log(_config.MONGODB_URI);
+var MONGODB_URI = process.env.MONGODB || 'mongodb://127.0.0.1:27017/crud-rvdshop';
+//const uri='mongodb+srv://RVDshop:emtZiSg5ti4783AU@cluster0.bkqvd8j.mongodb.net/?retryWrites=true&w=majority'
+
 (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee() {
   var db;
   return _regenerator["default"].wrap(function _callee$(_context) {
